@@ -1,16 +1,15 @@
 name: Publish to PyPI
-
 on:
   push:
     tags:
       - 'v*'
 
 jobs:
-  publish:
+  pypi-publish:
     runs-on: ubuntu-latest
     permissions:
-      id-token: write
-      contents: read
+      id-token: write    # REQUIRED for OIDC authentication
+      contents: read     # Needed to read repository files
     environment:
       name: pypi
     steps:
@@ -21,5 +20,5 @@ jobs:
       - run: |
           pip install build
           python -m build
-      - name: Publish package to PyPI
+      - name: Publish distributions to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
