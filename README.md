@@ -5,7 +5,7 @@
 Example :-
 Suppose this is the network architecture-
 
-![Network architecture](assets/image.png)
+![Network architecture](minimalANN/assets/architecture.png)
 
 To implement the above architecture, we can use the following code -
 
