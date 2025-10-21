@@ -1,13 +1,16 @@
 # minimalANN
 
 ## How to use?
+
 Example :-
 Suppose this is the network architecture-
 
 ![Network architecture](assets/image.png)
 
 To implement the above architecture, we can use the following code -
+
 ```python
+
 import numpy as np
 import backpropagation as bp
 import network
