@@ -9,7 +9,7 @@ description = "A minimal barebones ANN using only numpy"
 authors = [
     { name = "Amritanshu Barpanda", email = "your_email@example.com" }
 ]
-license = { text = "MIT" }
+license = "MIT"
 readme = "README.md"
 requires-python = ">=3.8"
 
