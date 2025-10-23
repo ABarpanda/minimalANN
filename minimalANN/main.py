@@ -1,5 +1,6 @@
 if __name__ == "__main__":
-    import sys, os
+    import sys
+    import os
     import numpy as np
     sys.path.append(os.path.dirname(os.path.dirname(__file__)))
     __package__ = "minimalANN"
@@ -18,5 +19,5 @@ if __name__ == "__main__":
     X = np.array([[1]])
     y = np.array([1.707])
 
-    nn = nn.train(X, y, 1)
+    nn = nn.train(X, y, 1, verbose=False)
     print(nn.weights)
