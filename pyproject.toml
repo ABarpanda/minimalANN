@@ -4,14 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "minimalANN"
-version = "1.0.0"
-description = "A minimal barebones ANN using only numpy"
+version = "1.0.8"
+description = "A minimal barebones ANN library using only numpy"
 authors = [
     { name = "Amritanshu Barpanda", email = "your_email@example.com" }
 ]
 license = "MIT"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 
 dependencies = [
     "numpy"
