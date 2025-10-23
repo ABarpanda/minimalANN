@@ -10,11 +10,9 @@ Suppose this is the network architecture-
 To implement the above architecture, we can use the following code -
 
 ```python
-
 import numpy as np
-import backpropagation as bp
-import network
-import layer
+import minimalANN.network as network
+import minimalANN.layer as layer
 
 nn = network.NeuralNetwork()
 

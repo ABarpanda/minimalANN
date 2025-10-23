@@ -1,7 +1,7 @@
 import numpy as np
-import network
-import activations
-import layer
+from . import network
+from . import activations
+from . import layer
 
 def f_dot_matrix(nn:network.NeuralNetwork, m:int):
     '''

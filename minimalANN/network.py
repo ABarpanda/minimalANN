@@ -1,6 +1,5 @@
 import numpy as np
-import layer
-import backpropagation as bp
+from . import layer
 
 class NeuralNetwork:
     def __init__(self):
@@ -14,6 +13,7 @@ class NeuralNetwork:
         self.error = 0
 
     def train(self, X, y, epochs):
+        from . import backpropagation as bp
         for _ in range(epochs):
             print(f"EPOCH : {_+1}\n\n\n")
             bp.forward(self, X, y)
